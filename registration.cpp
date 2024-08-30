@@ -46,7 +46,7 @@ Registration::RegistrationDialog(){
        return;
     }
 
-     std::string encryptedUsername = encryptionManager-> encrypt(username.toStdStrin());
+     std::string encryptedUsername = encryptionManager-> encrypt(username.toStdString());
      std::string encryptedPassword = encryptionManager->encrypt(password.toStdString());
 
     QSqlquery query;
